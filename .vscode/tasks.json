@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build",
+			"detail": "npm run tsc && copyfiles -u 1 src/**/*.json src/**/*.pem src/**/**/*.json src/**/**/*.ejs src/app/assets/**/*.*  ./dist"
+		},
+		// {
+		// 	"type": "npm",
+		// 	"script": "dev",
+		// 	"problemMatcher": [],
+		// 	"label": "npm: dev",
+		// 	"detail": "ts-node-dev --respawn ./src/server.ts",
+		// 	"group": {
+		// 		"kind": "build",
+		// 		"isDefault": true
+		// 	}
+		// }
+	]
+}
